@@ -11,7 +11,7 @@
 # https://rasa.com/docs/rasa/custom-actions
 
 action_endpoint:
-  url: "https://charanchatbot.herokuapp.com/"
+  url: "https://13.232.22.238"
 
 # Tracker store which is used to store the conversations.
 # By default the conversations are stored in memory.
@@ -38,3 +38,7 @@ action_endpoint:
 # Event broker which all conversation events should be streamed to.
 # https://rasa.com/docs/rasa/event-brokers
 
+nlu:
+    url: "http://charanchatbot.herokuapp.com:5005"
+    token: <token>  # [optional]
+    token_name: <name of the token> # [optional] (default: token)
