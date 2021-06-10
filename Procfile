@@ -1,1 +1,1 @@
-web: npm start
+web: rasa run --enable-api --cors "*"
