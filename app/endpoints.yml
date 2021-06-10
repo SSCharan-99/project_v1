@@ -11,7 +11,7 @@
 # https://rasa.com/docs/rasa/custom-actions
 
 action_endpoint:
-  url: "https://65.0.72.228"
+ url: "http://localhost:5055/webhook"
 
 # Tracker store which is used to store the conversations.
 # By default the conversations are stored in memory.
@@ -38,7 +38,12 @@ action_endpoint:
 # Event broker which all conversation events should be streamed to.
 # https://rasa.com/docs/rasa/event-brokers
 
-nlu:
-    url: "http://charanchatbot.herokuapp.com:5005"
-    token: <token>  # [optional]
-    token_name: <name of the token> # [optional] (default: token)
+
+
+# tracker_store:
+#     type: SQL
+#     dialect: "mysql+pymysql"  # the dialect used to interact with the db
+#     url: "localhost"  # (optional) host of the sql db, e.g. "localhost"
+#     db: "rasa_feedback"  # path to your db
+#     username:  "root" # username used for authentication
+#     password:  "nagasai123" # password used for authentication

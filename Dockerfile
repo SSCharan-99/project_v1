@@ -1,18 +1,5 @@
 FROM ubuntu:20.04
-ENTRYPOINT []
-FROM node as prod
 
-WORKDIR /app
-
-COPY package*.json ./
-
-RUN npm install
-
-WORKDIR /app/client
-
-COPY ./package*.json ./
-
-RUN npm install
 
 WORKDIR /app
 

@@ -2,21 +2,11 @@ version: "2.0"
 
 stories:
 
-- story: Placement
-  steps:
-  - intent: Placement
-  - action: utter_placement
-
-
-- story: About MSIT
-  steps:
-  - intent: info_MSIT
-  - action: utter_info_MSIT
-
 - story: happy path
   steps:
   - intent: greet
   - action: utter_greet
+  - action: utter_gform
   - intent: mood_great
   - action: utter_happy
 
@@ -24,6 +14,7 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
+  - action: utter_gform
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
@@ -39,3 +30,216 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story:  Placement
+  steps:
+  - intent: Placement
+  - action: utter_placement
+
+- story: Package
+  steps:
+  - intent: Package
+  - action: action_package
+
+- story: Fee
+  steps: 
+  - intent: Fee
+  - action: action_fee
+
+- story: companies
+  steps:
+    - intent: companies
+    - action: utter_company
+
+- story: information
+  steps:
+   - intent: information
+   - action: utter_info
+- story: laptop
+  steps:
+  - intent: laptop
+  - action: utter_lappy
+
+- story: benefits
+  steps:
+  - intent: benefits
+  - action: utter_benefits
+
+- story: classes
+  steps:
+  - intent: extra_classes
+  - action: utter_extra_classes
+
+- story: prerequisites
+  steps:
+  - intent: prerequisites
+  - action: utter_prerequisites
+
+- story: concession
+  steps:
+  - intent: concession
+  - action: utter_concession
+
+- story: backlogs
+  steps:
+  - intent: backlogs
+  - action: utter_backlogs
+
+- story: cutoff
+  steps:
+  - intent: cutoff
+  - action: utter_cutoff
+
+- story: Documentation
+  steps:
+  - intent: Documentation
+  - action: utter_Documentation
+
+- story: attempts
+  steps:
+  - intent: attempts
+  - action: utter_attempts
+
+- story: marks
+  steps:
+  - intent: marks
+  - action: utter_marks
+
+- story: recorded_classes
+  steps:
+  - intent: recorded_classes
+  - action: utter_recorded_classes
+
+- story: batches
+  steps:
+    - intent: batches
+    - action: utter_batches
+  
+- story: mentors
+  steps:
+    - intent: mentors
+    - action: utter_mentors
+
+- story: Duration
+  steps:
+    - intent: Duration
+    - action: utter_duration
+
+- story: dress
+  steps: 
+    - intent: dress
+    - action: utter_dress
+
+- story: hostel
+  steps:
+    - intent: hostel
+    - action: utter_hostel
+
+- story: percentage
+  steps:
+    - intent: percentage
+    - action: utter_percentage
+
+- story: course structure
+  steps:
+  - intent: course_structure
+  - action: utter_course
+
+- story: Non-IT Background
+  steps:
+  - intent: Non-IT_Background
+  - action: utter_Non_IT
+ 
+- story: Grading policy
+  steps:
+  - intent: Grading_policy
+  - action: utter_Grading
+
+- story: Learning centers
+  steps:
+  - intent: Learning_centers
+  - action: utter_learning-centers
+ 
+- story: specializations
+  steps:
+  - intent: specializations
+  - action: utter_specializations
+
+- story: credit system
+  steps:
+  - intent: credit_system
+  - action: utter_credit_system
+ 
+- story: GAT syllabus
+  steps:
+  - intent: GAT_syllabus
+  - action: utter_GAT
+ 
+- story: class strength
+  steps:
+  - intent: class_strength
+  - action: utter_class_strength
+
+- story: class timings
+  steps:
+  - intent: class_timings 
+  - action: utter_timings
+
+- story: first year curriculum 
+  steps:
+  - intent: first_year_curriculum 
+  - action: utter_first_year
+ 
+- story: second year curriculum 
+  steps:
+  - intent: second_year_curriculum 
+  - action: utter_second_year
+ 
+- story: Attendence percentage 
+  steps:
+  - intent: Attendence_percentage 
+  - action: utter_Attendence_Percentage
+ 
+- story: count of semesters 
+  steps:
+  - intent: count_of_semesters
+  - action: utter_count_sem
+ 
+- story: sem based exams  
+  steps:
+  - intent: sem_based_exams 
+  - action: utter_sem_exams
+
+- story: CIHL
+  steps:
+  - intent: CIHL
+  - action: utter_CIHL
+ 
+- story: mock
+  steps:
+  - intent: mock_test
+  - action: utter_mock 
+ 
+- story: leave
+  steps:
+  - intent: leave
+  - action: utter_leave 
+ 
+
+- story: sat class
+  steps:
+  - intent: sat_class
+  - action: utter_saturday
+
+- story: affirm application
+  steps:
+  - intent: affirm_application
+  - action: utter_affirm_application
+
+- story: deny application
+  steps:
+  - intent: deny_application
+  - action: utter_bye
+
+
+
