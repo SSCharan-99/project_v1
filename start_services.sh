@@ -1,3 +1,3 @@
 cd app/
 
-rasa run --credentials ./credentials.yml  --enable-api --auth-token XYZ123 --model ./models --endpoints ./endpoints.yml --enable-api --cors "*" --debug \ -p $PORT
+rasa run --credentials ./credentials.yml  --enable-api --auth-token XYZ123 --model ./models --endpoints ./endpoints.yml --enable-api --cors "*" --debug 
